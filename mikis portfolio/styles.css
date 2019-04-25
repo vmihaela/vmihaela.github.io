@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/*global view*/
+header {
+    background-color: rgba(48,59,63,0.85);
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    float: right;
+}
+.mobile-view {
+    display: none;
+}
+.desktop-view ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.btn-red {
+    background-color: #FF6138;
+    padding-top: 13px;
+    padding-left: 43px;
+    padding-right: 43px;
+    text-decoration: none;
+    color: #F2E6E6;
+    padding-bottom: 13px;
+}
+.hero-image .container {
+}
+.desktop-view ul li a {
+    padding-top: 10px;
+    padding-right: 43px;
+    padding-left: 43px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #F8EEEF;
+    font-family: open-sans-condensed;
+    font-style: normal;
+    font-weight: 300;
+}
+body {
+    font-family: open-sans-condensed;
+    font-style: normal;
+    font-weight: 300;
+    background-color: #EAEAEA;
+    margin-top: 0px;
+}
+.hero-image {
+    height: 653px;
+    background-image: url(images/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0%;
+    padding-top: 24px;
+}
+.desktop-view {
+    margin-top: -11px;
+    padding-top: 0px;
+}
+.btn-green {
+    background-color: #00A388;
+}
+.btn-red {
+}
+main {
+    min-width: 0px;
+    min-height: 800px;
+}
+footer {
+    height: 97px;
+    margin-top: 33px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.social icon {
+    float: left;
+    margin-top: 11px;
+}
+.copyright {
+    float: right;
+    margin-top: -30px;
+}
+.hero-content {
+    margin-top: 83px;
+    margin-left: 100px;
+}
+.float-left {
+    float: left;
+}
+.availability {
+    color: #F0BC68;
+    font-family: open-sans-condensed;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 7px;
+}
+.clarfloat {
+    float: none;
+    clear: both;
+}
+h1 {
+    color: #F4F0F0;
+    font-size: 80px;
+    font-family: playfair-display;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 88px;
+}
+hr {
+    border-style: solid;
+    border-color: #F1E9EA;
+    margin-top: -13px;
+    margin-bottom: 50px;
+}
+.hero-content .btn-red {
+    background-color: #FF6138;
+    padding-top: 13px;
+    padding-left: 43px;
+    padding-right: 43px;
+    text-decoration: none;
+    color: #F2E6E6;
+    padding-bottom: 13px;
+}
+.image-grid {
+    margin-top: 142px;
+    margin-bottom: 49px;
+}
+.col {
+    background-color: #9B42C9;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+}
+.responsive-image  {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.col-lg {
+    width: 31.3%;
+}
+.image-grid:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.text-white-description {
+    color: #F7F5F5;
+    font-size: 30px;
+}
+.text-red {
+    color: #EF610F;
+}
+
+
+/*tablet view*/
+
+@media (min-width: 401px) and (max-width: 768px){
+.mobile-view {
+    display: block;
+    float: right;
+    margin-top: 8px;
+}
+.desktop-view  {
+    display: none;
+    text-align: right;
+}
+.expand {
+    display: block;
+}
+.desktop-view ul li {
+    display: block;
+    padding-top: 25px;
+}
+.hero-content {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+h1 {
+    font-size: 65px;
+    line-height: 65px;
+}
+.col-md {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.image-grid {
+    margin-top: 184px;
+}
+}
+/*mobile view*/
+
+
+@media (max-width: 400px){
+.mobile-view {
+    display: block;
+    text-align: right;
+    float: right;
+    margin-top: 8px;
+}
+.desktop-view {
+    display: none;
+}
+.expand {
+    display: block;
+}
+header a img {
+    width: 83%;
+    height: 83%;
+}
+.desktop-view ul li {
+    display: block;
+    padding-top: 25px;
+}
+.hero-image {
+    height: 536px;
+}
+.hero-image .container main {
+}
+.hero-content {
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+}
+h1 {
+    font-size: 42px;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.hero-content img.float-left {
+    margin-left: 55px;
+}
+hr {
+    margin-bottom: 40px;
+    visibility: hidden;
+}
+.col-xs {
+    width: 98%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+main .hero-content {
+}
+}
+.desktop-view {
+}
+.float-right {
+    float: right;
+}
+.col-md {
+}
